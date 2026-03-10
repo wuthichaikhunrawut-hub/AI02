@@ -56,10 +56,10 @@ To get your Supabase connection string:
 3. Find "Connection string" section
 4. Copy the URI and replace `[YOUR-PASSWORD]` with your database password
 
-To get your Gemini API key:
+To get your Gemini API key: ==> เปลี่ยนมาใช้ API KEY จาก Qroq และ Colab
 1. Go to Google AI Studio (https://aistudio.google.com/app/apikey)
 2. Create a new API key
-3. Copy the key to your .env file
+3. Copy the key to your .env file 
 
 ### 3. Frontend Setup
 
@@ -194,29 +194,29 @@ MIT
 
 ## Team Contribution Log
 
-### Wuthichai Khunrawut
+### วุฒิชัย
 - Designed system architecture
 - Developed backend (Node.js + Express)
 - Integrated Supabase database
 - Implemented AI integration (Colab + Llama3)
 - Developed core API endpoints
 
-### Member 2
+### ศิริลักษณ 2
 - Developed frontend UI using React and TailwindCSS
 - Implemented Generate Reply page
 - Assisted with UI testing
 
-### Member 3
+### อิทธิภากร 
 - Designed dashboard layout
 - Assisted with frontend styling
 - Performed system testing
 
-### Member 4
+### เปมิกา 
 - Prepared presentation slides
 - Wrote project documentation
 - Assisted with report preparation
 
-### Member 5
+### กรรณิการ์ 
 - Helped with testing and debugging
 - Assisted with system demonstration
 - Prepared demo materials
