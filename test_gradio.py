@@ -3,7 +3,7 @@ import json
 import urllib.request
 import urllib.error
 
-url = "https://5e2395e0fb21bcd75e.gradio.live"
+url = "https://wuthichaics01-ai-email-assistant.hf.space/"
 
 def test_endpoint(path, payload):
     full_url = f"{url}{path}"

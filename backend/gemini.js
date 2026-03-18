@@ -6,14 +6,7 @@ const { Client } = require("@gradio/client");
  * @returns {Promise<string>} - The AI generated reply
  */
 const generateReply = async (customerMessage) => {
-  const prompt = `You are a professional customer support agent.
-
-Write a polite email reply to the customer based on the following message.
-
-Customer message:
-${customerMessage}
-
-Include greeting and apology if appropriate. Keep the reply professional and concise.`;
+  const prompt = customerMessage;
 
   try {
     const colabUrl = process.env.COLAB_AI_URL;
