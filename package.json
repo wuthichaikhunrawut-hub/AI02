@@ -2,7 +2,12 @@
   "name": "ai-email-reply-assistant",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm install && npm run build",
+    "install": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "@gradio/client": "^2.1.0",
