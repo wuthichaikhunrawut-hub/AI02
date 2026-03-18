@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "sh build.sh",
   "outputDirectory": "frontend/dist",
   "rewrites": [
     { "source": "/api/feedback/:id", "destination": "/api/feedback" },
