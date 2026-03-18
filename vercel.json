@@ -1,6 +1,9 @@
 {
-  "buildCommand": "sh build.sh",
-  "outputDirectory": "frontend/dist",
+  "framework": "vite",
+  "rootDirectory": "frontend",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
   "rewrites": [
     { "source": "/api/feedback/:id", "destination": "/api/feedback" },
     { "source": "/api/:path*", "destination": "/api/:path*" },
