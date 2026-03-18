@@ -6,6 +6,9 @@
 [functions]
   directory = "functions"
 
+[build.environment]
+  NPM_CONFIG_PRODUCTION = "false"
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
