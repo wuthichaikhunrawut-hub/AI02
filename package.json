@@ -1,6 +1,9 @@
 {
   "name": "ai-email-reply-assistant",
   "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build"
+  },
   "dependencies": {
     "@gradio/client": "^2.1.0",
     "cors": "^2.8.5",
