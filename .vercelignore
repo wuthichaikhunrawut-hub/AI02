@@ -1,6 +1,5 @@
 app.py
 requirements.txt
-backend/
 test_gradio.py
 Customer.pdf
 README.md

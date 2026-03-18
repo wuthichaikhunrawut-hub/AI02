@@ -43,14 +43,20 @@ app.use((err, req, res, next) => {
 const startServer = async () => {
   try {
     await initializeDatabase();
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-      console.log(`Health check: http://localhost:${PORT}/api/health`);
-    });
+    // รัน .listen เฉพาะตอนเทสในเครื่องตัวเอง (Vercel จะใช้แค่ตัว app เฉยๆ)
+    if (process.env.NODE_ENV !== 'production') {
+      app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+        console.log(`Health check: http://localhost:${PORT}/api/health`);
+      });
+    }
   } catch (error) {
     console.error('Failed to start server:', error);
-    process.exit(1);
+    // ห้ามใช้ process.exit(1) บน Vercel เพราะจะทำให้ Serverless Function แครชทันที
   }
 };
 
 startServer();
+
+// Export สำหรับ Vercel Serverless Function
+module.exports = app;
